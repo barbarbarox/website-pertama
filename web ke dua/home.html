@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABAROX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ABAROX</h1>
+        <div class="search-box">
+            <input type="text" placeholder="cari..." class="search-input">
+        </div>
+        <div class="web-tests">
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web1.html">test web 1</a>
+            </div>
+            <div class="test-box" onclick="animateBox(this)">test web 2</div>
+            <div class="test-box" onclick="animateBox(this)">test web 3</div>
+            <div class="test-box" onclick="animateBox(this)">test web 4</div>
+            <div class="test-box" onclick="animateBox(this)">test web 5</div>
+            <div class="test-box" onclick="animateBox(this)">test web 6</div>
+        </div>
+        <div class="contact-info">
+            <p>Email: mauianaakbar1387@gmail.com</p>
+            <p>Instagram: abar_._</p>
+            <p>WhatsApp: 089636926578</p>
+        </div>
+    </div>
+
+    <!-- Gambar baru di sudut kanan bawah -->
+    <img src="a6d98db9-54bf-4785-9db1-8247c07304da.png" alt="Gambar Kanan Bawah" class="anime-character">
+
+    <script>
+        function animateBox(element) {
+            element.classList.add("clicked");
+            setTimeout(() => {
+                element.classList.remove("clicked");
+            }, 300); // Durasi animasi 300ms
+        }
+    </script>
+</body>
+</html>

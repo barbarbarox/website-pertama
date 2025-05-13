@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABAROX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ABAROX</h1>
+        <div class="search-box">
+            <input type="text" placeholder="cari..." class="search-input">
+        </div>
+        <div class="web-tests">
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web1.html">test web 1</a>
+            </div>
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web2.html">test web 2</a>
+            </div>
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web3.html">test web 3</a>
+            </div>
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web4.html">test web 4</a>
+            </div>
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web5.html">test web 5</a>
+
+            </div>
+            <div class="test-box" onclick="animateBox(this)">
+                <a href="test-web6.html">test web 6</a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <p><a href="mailto: mauianaakbar1387@gmail.com">hubungi lewat email</a></p>
+            <hr>
+            <p>Instagram: <a href="https://www.instagram.com/abar_._?">@abar_._</a></p>
+            <hr>
+            <p>WhatsApp: 089636926578</p>
+        </div>
+    </div>
+
+    <!-- Gambar baru di sudut kanan bawah -->
+    <img src="a6d98db9-54bf-4785-9db1-8247c07304da.png" alt="Gambar Kanan Bawah" class="anime-character">
+
+    <script>
+        function animateBox(element) {
+            element.classList.add("clicked");
+            setTimeout(() => {
+                element.classList.remove("clicked");
+            }, 300); // Durasi animasi 300ms
+        }
+    </script>
+    <script src="data.js" />
+</body>
+</html>

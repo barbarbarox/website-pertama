@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Desain tanpa judul.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Untuk memastikan gambar tetap di sudut kanan bawah */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.web-tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.test-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(33.33% - 10px);
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-box.clicked {
+    animation: glow 0.3s ease;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Styling untuk gambar baru */
+.anime-character {
+    position: absolute;
+    bottom: 0; /* Mentok ke bawah */
+    right: 0; /* Mentok ke kanan */
+    width: 400px; /* Ukuran gambar */
+    height: auto;
+    border-radius: 20px;
+    opacity: 0.9; /* Sedikit transparan */
+}
